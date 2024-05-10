@@ -28,7 +28,6 @@ public class TopDownAimRotation : MonoBehaviour
     {
         //방향으로 각도를 구한다.
         float rotZ  = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        Debug.Log(rotZ);
         characterRenderer.flipX = Mathf.Abs(rotZ) > 90f;
     }
 }
