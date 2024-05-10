@@ -10,13 +10,10 @@ public class EnterSceneUIManager : MonoBehaviour
 {
     [Header("User Input Name")]
     public InputField inputField;
-    public Button joinButton;
     [Header("Character Pop-Up")]
-    public Button characterPopUpButton;
     public GameObject popUpCharacterImage;
     [Header("Image Contorl")]
     public Image mainImage;
-    public Image selectedImage;
 
     
 
@@ -35,19 +32,22 @@ public class EnterSceneUIManager : MonoBehaviour
 
     public void ChangeMainImageSprite(Sprite newSprite)
     {
+        DataManager.instance.playerSprite = mainImage.sprite;
         mainImage.sprite = newSprite;
     }
     
     public void MoveToMainScene()
     {
-        ChangeMainImageSprite();
-        SceneManager.LoadScene("MainScene");
-    }
+        if(inputField.text!="")
+        {
+            DataManager.instance.SetCharacterName(inputField.text.ToString());
+            SceneManager.LoadScene("MainScene");
+        }
+        //TODO : 이름이 빈상태로 입력하면 다시 입력하라는 UI띄우기
+        else
+        {
+            Debug.Log("다시 입력해주세요");
 
-    public void ChangeMainImageSprite()
-    {
-
+        }
     }
-    //TODO : 캐릭터 이름 입력받아서 넘기기
-    
 }
