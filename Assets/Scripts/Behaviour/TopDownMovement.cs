@@ -5,14 +5,14 @@ public class TopDownMovement : MonoBehaviour
 {
     [SerializeField]
     private TopDownController controller;
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D movementRigidbody;
 
     private Vector2 movementDirection = Vector2.zero;
 
     private void Awake()
     {
         controller = GetComponent<TopDownController>();
-        rigidbody = GetComponent<Rigidbody2D>();
+        movementRigidbody = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
@@ -33,6 +33,6 @@ public class TopDownMovement : MonoBehaviour
     private void ApplyMovement(Vector2 direction)
     {
         direction = direction * 5;
-        rigidbody.velocity = direction;
+        movementRigidbody.velocity = direction;
     }
 }

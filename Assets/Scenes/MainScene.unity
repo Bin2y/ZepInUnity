@@ -132,11 +132,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 71673393}
-  - component: {fileID: 71673394}
-  - component: {fileID: 71673397}
   - component: {fileID: 71673396}
   - component: {fileID: 71673395}
   - component: {fileID: 71673398}
+  - component: {fileID: 71673394}
+  - component: {fileID: 71673397}
+  - component: {fileID: 71673399}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -287,6 +288,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &71673399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71673392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21fad6696e2f6794ca24bd2fedb9816f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterRenderer: {fileID: 645199171}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
