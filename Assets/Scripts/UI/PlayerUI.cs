@@ -19,4 +19,6 @@ public class PlayerUI : MonoBehaviour
             playerNameText.text = DataManager.instance.playerName;
         }
     }
+
+   
 }
