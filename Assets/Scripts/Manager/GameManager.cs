@@ -23,8 +23,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Init();
-
-
     }
 
     private void Init()
@@ -43,4 +41,6 @@ public class GameManager : MonoBehaviour
         //복사본을 바라보게 세팅
         character = Instantiate(character);
     }
+
+
 }

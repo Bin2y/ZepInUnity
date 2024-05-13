@@ -6,28 +6,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class EnterSceneUIManager : MonoBehaviour
+public class EnterSceneUIManager : UIManager
 {
-    [Header("User Input Name")]
-    public InputField inputField;
-    [Header("Character Pop-Up")]
-    public GameObject popUpCharacterImage;
+   
     [Header("Image Contorl")]
     public Image mainImage;
 
     
-
-    public void PopUpCharacterUI()
+    public override void ChooseCharacter(GameObject obj)
     {
-        popUpCharacterImage.SetActive(true);
-    }
-
-    public void ChooseCharacter(GameObject obj)
-    {
-        DataManager.instance.SetCharacterStr(obj.name);
-        Debug.Log(obj.name);
         ChangeMainImageSprite(obj.GetComponent<Image>().sprite);
-        popUpCharacterImage.SetActive(false);
+        base.ChooseCharacter(obj);
     }
     public void ChangeMainImageSprite(Sprite newSprite)
     {
