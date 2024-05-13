@@ -590,6 +590,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 73815170}
     m_Modifications:
+    - target: {fileID: 4515069326397886261, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1993122457}
+    - target: {fileID: 4515069326397886261, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChooseCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515069326397886261, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainSceneUIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4768634971049510826, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
       propertyPath: m_Name
       value: Character Page
@@ -597,6 +609,18 @@ PrefabInstance:
     - target: {fileID: 4768634971049510826, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854115104605728016, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1993122457}
+    - target: {fileID: 6854115104605728016, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChooseCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854115104605728016, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainSceneUIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6984188587517916718, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
       propertyPath: m_Pivot.x
@@ -776,9 +800,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1993122457}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PopUpCharacterUI
+        m_MethodName: PopUpCharacterPageUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

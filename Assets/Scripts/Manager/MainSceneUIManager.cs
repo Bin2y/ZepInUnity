@@ -14,6 +14,11 @@ public class MainSceneUIManager : UIManager
         SetPlayerNameText();
     }
 
+    public override void ChooseCharacter(GameObject obj)
+    {
+        base.ChooseCharacter(obj);
+        GameManager.Instance.SwapCharacter();
+    }
     public void SetPlayerNameText()
     {
 
