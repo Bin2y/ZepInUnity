@@ -34,10 +34,9 @@ public class DataManager : MonoBehaviour
 
     public void SetCharacterName(string name)
     {
+        currentUsers.Remove(playerName);
         playerName = name;
         currentUsers.Add(playerName);
-
-        
     }
 
     public void SetCharacterStr(string characterStr)
