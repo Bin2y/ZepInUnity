@@ -24,6 +24,7 @@ public class MainSceneUIManager : UIManager
     [Header("Dialogue")]
     public GameObject dialogue;
     public GameObject dialogueBox;
+    public Text dialogueName;
 
     private void Awake()
     {
@@ -36,12 +37,12 @@ public class MainSceneUIManager : UIManager
     {
         //최초로 넘어온 값을 등록
         SetPlayerNameText();
-        showPlayerList();
+        ShowPlayerList();
     }
 
 
 
-    private void showPlayerList()
+    private void ShowPlayerList()
     {
         playerListText.text = "";
         foreach (string obj in DataManager.instance.currentUsers)
@@ -51,10 +52,17 @@ public class MainSceneUIManager : UIManager
         }
     }
 
+    public override void PopUpCharacterPageUI()
+    {
+        base.PopUpCharacterPageUI();
+        characterNameBar.SetActive(false);
+
+    }
     public override void ChooseCharacter(GameObject obj)
     {
         base.ChooseCharacter(obj);
         GameManager.Instance.SwapCharacter();
+        characterNameBar.SetActive(true);
     }
     public void SetPlayerNameText()
     {
@@ -65,7 +73,7 @@ public class MainSceneUIManager : UIManager
             popUpCharacterName.SetActive(false);
         }
         //update
-        showPlayerList();
+        ShowPlayerList();
     }
 
     public void PopUpCharacterName()
@@ -103,5 +111,10 @@ public class MainSceneUIManager : UIManager
     public void PopUpDialogueBox()
     {
         dialogueBox.SetActive(true);
+    }
+
+    public void SetDialogueName(string name)
+    {
+        dialogueName.text = name;
     }
 }
