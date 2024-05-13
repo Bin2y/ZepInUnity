@@ -6,6 +6,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MainSceneUIManager : UIManager
 {
+    public static MainSceneUIManager Instance;
+
     public GameObject popUpCharacterName;
     public Text playerNameText;
     public GameObject characterNameBar;
@@ -19,7 +21,17 @@ public class MainSceneUIManager : UIManager
     [Header("Text")]
     public Text playerListText;
 
+    [Header("Dialogue")]
+    public GameObject dialogue;
+    public GameObject dialogueBox;
 
+    private void Awake()
+    {
+        if(Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
     private void Start()
     {
         //최초로 넘어온 값을 등록
@@ -75,5 +87,21 @@ public class MainSceneUIManager : UIManager
     public void PopUpPeopleListBar()
     {
         peopleListBar.SetActive(true);
+    }
+
+    public void PopUpDialogue()
+    {
+        dialogue.SetActive(true);
+    }
+
+    public void PopDownDialogue()
+    {
+        dialogue.SetActive(false);
+        dialogueBox.SetActive(false);
+    }
+
+    public void PopUpDialogueBox()
+    {
+        dialogueBox.SetActive(true);
     }
 }

@@ -17,6 +17,19 @@ public class NPCController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("대화시작");
+        if(collision.CompareTag("Player"))
+        {
+            MainSceneUIManager.Instance.PopUpDialogue();
+        }
         //TODO :  npc대화
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("대화종료");
+        if (collision.CompareTag("Player"))
+        {
+            MainSceneUIManager.Instance.PopDownDialogue();
+        } 
     }
 }
