@@ -8,7 +8,7 @@ public class DataManager : MonoBehaviour
     public static DataManager instance = null;
 
     [SerializeField] public string playerName { get; set; }
-    [SerializeField] public Sprite playerSprite {  get; set; }
+    [SerializeField] public string playerCharacterStr {  get; set; }
     
 
     private void Awake()
@@ -24,14 +24,19 @@ public class DataManager : MonoBehaviour
         DontDestroyOnLoad (gameObject);
     }
 
+    public void Start()
+    {
+        playerName = "Default";
+        playerCharacterStr = "Penguin";
+    }
 
     public void SetCharacterName(string name)
     {
         playerName = name;
     }
 
-    public void SetCharacterSprite(Sprite sprite)
+    public void SetCharacterStr(string characterStr)
     {
-        playerSprite = sprite;
+        playerCharacterStr = characterStr;
     }
 }

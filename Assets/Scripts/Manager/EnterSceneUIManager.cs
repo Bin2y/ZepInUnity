@@ -22,17 +22,16 @@ public class EnterSceneUIManager : MonoBehaviour
         popUpCharacterImage.SetActive(true);
     }
 
-    //두 개의 캐릭터 중에 하나 고르면 작동하는 메서드
-    public void ChooseCharacter(Image image)
+    public void ChooseCharacter(GameObject obj)
     {
-        ChangeMainImageSprite(image.sprite);
+        DataManager.instance.SetCharacterStr(obj.name);
+        Debug.Log(obj.name);
+        ChangeMainImageSprite(obj.GetComponent<Image>().sprite);
         popUpCharacterImage.SetActive(false);
-        //TODO : 캐릭터 스프라이트 받아서 넘기기 (캐릭터를 두개를 만들어야하나)
     }
-
     public void ChangeMainImageSprite(Sprite newSprite)
     {
-        DataManager.instance.playerSprite = mainImage.sprite;
+        
         mainImage.sprite = newSprite;
     }
     
