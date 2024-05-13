@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class UIManager : MonoBehaviour
 {
@@ -7,7 +8,6 @@ public class UIManager : MonoBehaviour
     public InputField inputField;
     [Header("Character Pop-Up")]
     public GameObject popUpCharacterPage;
-    
     
     public void PopUpCharacterPageUI()
     {

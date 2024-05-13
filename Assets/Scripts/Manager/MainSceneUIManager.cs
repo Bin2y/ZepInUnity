@@ -1,12 +1,21 @@
-  using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class MainSceneUIManager : UIManager
 {
     public GameObject popUpCharacterName;
     public Text playerNameText;
+    
+
+    [Header("Time")]
+    public Text currentTimeText;
+
+    [Header("Bar")]
+    public GameObject peopleListBar;
+
 
     private void Start()
     {
@@ -37,5 +46,14 @@ public class MainSceneUIManager : UIManager
     public void EnterCharacterName()
     {
         DataManager.instance.SetCharacterName(inputField.text.ToString());
+    }
+
+    public void OnPressX()
+    {
+        peopleListBar.SetActive(false);
+    }
+    public void PopUpPeopleListBar()
+    {
+        peopleListBar.SetActive(true);
     }
 }
