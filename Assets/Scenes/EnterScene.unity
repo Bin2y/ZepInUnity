@@ -337,8 +337,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1793145170}
-        m_TargetAssemblyTypeName: EnterSceneUIManager, Assembly-CSharp
-        m_MethodName: PopUpCharacterUI
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: PopUpCharacterPageUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 782015790}
-  popUpCharacterImage: {fileID: 480225264}
+  popUpCharacterPage: {fileID: 480225264}
   mainImage: {fileID: 1008384594}
 --- !u!4 &1793145171
 Transform:
