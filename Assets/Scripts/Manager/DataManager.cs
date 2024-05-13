@@ -9,7 +9,9 @@ public class DataManager : MonoBehaviour
 
     [SerializeField] public string playerName { get; set; }
     [SerializeField] public string playerCharacterStr {  get; set; }
-    
+
+    //현재 접속자
+    public List<string> currentUsers;
 
     private void Awake()
     {
@@ -33,6 +35,9 @@ public class DataManager : MonoBehaviour
     public void SetCharacterName(string name)
     {
         playerName = name;
+        currentUsers.Add(playerName);
+
+        
     }
 
     public void SetCharacterStr(string characterStr)

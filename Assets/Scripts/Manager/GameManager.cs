@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public GameObject characterPrefab;
     public GameObject character;
     public GameObject newCharacter;
+
+    
     private void Awake()
     {
         if (Instance == null)
