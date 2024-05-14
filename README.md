@@ -32,8 +32,5 @@
   - 간단한 대화 후 종료
 
   
-## 🖼 와이어 프레임
-
-
 ## 📹 시연 영상
 (https://www.youtube.com/watch?v=GQCzBXpyrXU)
