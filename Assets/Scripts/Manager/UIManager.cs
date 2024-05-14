@@ -12,10 +12,6 @@ public class UIManager : MonoBehaviour
     [Header("Character Pop-Up")]
     public GameObject popUpCharacterPage;
     
-    public virtual void PopUpCharacterPageUI()
-    {
-        popUpCharacterPage.SetActive(true);
-    }
 
     public virtual void ChooseCharacter(GameObject obj)
     {

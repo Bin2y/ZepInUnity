@@ -509,17 +509,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1993122457}
-        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
-        m_MethodName: PopUpPeopleListBar
-        m_Mode: 1
+      - m_Target: {fileID: 132346550}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &91912484
 MonoBehaviour:
@@ -1248,10 +1248,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1993122457}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PopUpCharacterPageUI
-        m_Mode: 1
+      - m_Target: {fileID: 356235393}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 785139174}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1889,10 +1901,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1993122457}
-        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
-        m_MethodName: OnPressX
-        m_Mode: 1
+      - m_Target: {fileID: 132346550}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -23597,10 +23609,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1993122457}
-        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
-        m_MethodName: PopUpCharacterName
-        m_Mode: 1
+      - m_Target: {fileID: 111314010}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 785139174}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -23777,7 +23801,6 @@ MonoBehaviour:
   playerNameText: {fileID: 1938495873}
   characterNameBar: {fileID: 785139174}
   currentTimeText: {fileID: 1139942594}
-  peopleListBar: {fileID: 132346550}
   playerListText: {fileID: 155387050}
   dialogue: {fileID: 1129484802}
   dialogueBox: {fileID: 1054030234}

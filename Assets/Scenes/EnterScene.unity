@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &60485153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1902261375697543561, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+  m_PrefabInstance: {fileID: 9018103654068088895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &73816743
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,17 +341,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1793145170}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PopUpCharacterPageUI
-        m_Mode: 1
+      - m_Target: {fileID: 480225264}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &311132243
 GameObject:
@@ -774,6 +779,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199424308}
   m_CullTransparentMesh: 1
+--- !u!1 &1408948867 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7494440248163842415, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+  m_PrefabInstance: {fileID: 9018103654068088895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1501161161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,17 +1123,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1501161165}
     m_Modifications:
     - target: {fileID: 4515069326397886261, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515069326397886261, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1793145170}
+    - target: {fileID: 4515069326397886261, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChooseCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515069326397886261, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnterSceneUIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515069326397886261, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 60485153}
+    - target: {fileID: 4515069326397886261, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4768634971049510826, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
       propertyPath: m_Name
       value: Character Page
       objectReference: {fileID: 0}
     - target: {fileID: 6854115104605728016, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854115104605728016, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1793145170}
+    - target: {fileID: 6854115104605728016, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChooseCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854115104605728016, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EnterSceneUIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854115104605728016, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1408948867}
+    - target: {fileID: 6854115104605728016, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6984188587517916718, guid: 0c09ae72e1d935a44bece9fcdf20e298, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -15,8 +15,6 @@ public class MainSceneUIManager : UIManager
     [Header("Time")]
     public Text currentTimeText;
 
-    [Header("Bar")]
-    public GameObject peopleListBar;
 
     [Header("Text")]
     public Text playerListText;
@@ -55,12 +53,6 @@ public class MainSceneUIManager : UIManager
         }
     }
 
-    public override void PopUpCharacterPageUI()
-    {
-        base.PopUpCharacterPageUI();
-        characterNameBar.SetActive(false);
-
-    }
     public override void ChooseCharacter(GameObject obj)
     {
         base.ChooseCharacter(obj);
@@ -85,24 +77,9 @@ public class MainSceneUIManager : UIManager
         ShowPlayerList();
     }
 
-    public void PopUpCharacterName()
-    {
-        popUpCharacterName.SetActive(true);
-        characterNameBar.SetActive(false);
-    }
-
     public void EnterCharacterName()
     {
         DataManager.instance.SetCharacterName(inputField.text.ToString());
-    }
-
-    public void OnPressX()
-    {
-        peopleListBar.SetActive(false);
-    }
-    public void PopUpPeopleListBar()
-    {
-        peopleListBar.SetActive(true);
     }
 
     public void PopUpDialogue()
