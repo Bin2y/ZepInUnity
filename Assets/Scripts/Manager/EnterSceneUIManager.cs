@@ -34,7 +34,7 @@ public class EnterSceneUIManager : UIManager
         //TODO : 이름이 빈상태로 입력하면 다시 입력하라는 UI띄우기
         else
         {
-            Debug.Log("다시 입력해주세요");
+            StartCoroutine(ShowRetryText());
         }
     }
 }

@@ -72,8 +72,14 @@ public class MainSceneUIManager : UIManager
 
         if (DataManager.instance.playerName != null)
         {
+            if(DataManager.instance.playerName == "")
+            {
+                StartCoroutine(ShowRetryText());
+                return;
+            }
             playerNameText.text = DataManager.instance.playerName;
             popUpCharacterName.SetActive(false);
+            characterNameBar.SetActive(true);
         }
         //update
         ShowPlayerList();
@@ -88,7 +94,6 @@ public class MainSceneUIManager : UIManager
     public void EnterCharacterName()
     {
         DataManager.instance.SetCharacterName(inputField.text.ToString());
-        characterNameBar.SetActive(true);
     }
 
     public void OnPressX()
