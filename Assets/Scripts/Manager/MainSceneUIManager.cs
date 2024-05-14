@@ -40,7 +40,10 @@ public class MainSceneUIManager : UIManager
         ShowPlayerList();
     }
 
-
+    private void Update()
+    {
+        SetDateTime();
+    }
 
     private void ShowPlayerList()
     {
@@ -116,5 +119,10 @@ public class MainSceneUIManager : UIManager
     public void SetDialogueName(string name)
     {
         dialogueName.text = name;
+    }
+
+    public void SetDateTime()
+    {
+        currentTimeText.text = DateTime.Now.ToString("HH:mm:ss tt");
     }
 }

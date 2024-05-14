@@ -35,7 +35,6 @@ public class EnterSceneUIManager : UIManager
         else
         {
             Debug.Log("다시 입력해주세요");
-
         }
     }
 }
