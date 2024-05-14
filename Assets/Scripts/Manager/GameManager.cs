@@ -39,9 +39,7 @@ public class GameManager : MonoBehaviour
     }
     public void SetPlayerCharacter()
     {
-        Debug.Log("Make Character : " + DataManager.instance.playerCharacterStr);
         characterPrefab = Resources.Load<GameObject>(DataManager.instance.playerCharacterStr);
-        
     }
 
     public void MakeCharacter()
