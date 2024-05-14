@@ -8,11 +8,11 @@ using UnityEngine.UI;
 
 public class EnterSceneUIManager : UIManager
 {
-   
+
     [Header("Image Contorl")]
     public Image mainImage;
 
-    
+
     public override void ChooseCharacter(GameObject obj)
     {
         ChangeMainImageSprite(obj.GetComponent<Image>().sprite);
@@ -20,13 +20,13 @@ public class EnterSceneUIManager : UIManager
     }
     public void ChangeMainImageSprite(Sprite newSprite)
     {
-        
+
         mainImage.sprite = newSprite;
     }
-    
+
     public void MoveToMainScene()
     {
-        if(inputField.text!="")
+        if (inputField.text.Length >= 2 && inputField.text.Length <= 10)
         {
             DataManager.instance.SetCharacterName(inputField.text.ToString());
             SceneManager.LoadScene("MainScene");

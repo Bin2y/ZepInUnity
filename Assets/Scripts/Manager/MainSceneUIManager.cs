@@ -72,7 +72,7 @@ public class MainSceneUIManager : UIManager
 
         if (DataManager.instance.playerName != null)
         {
-            if(DataManager.instance.playerName == "")
+            if(!(DataManager.instance.playerName.Length >= 2 && DataManager.instance.playerName.Length<=10))
             {
                 StartCoroutine(ShowRetryText());
                 return;
